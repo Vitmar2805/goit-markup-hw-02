@@ -19,18 +19,40 @@
     src: url(../fonts/Raleway-Bold.ttf)
 } */
 :root {
-    --color-logo-text: #434455;
+    --background: #E5E5E5;
+    --color-text: #434455;
     --color-light: #FFFFFF;
     --color-header-btn: #434455;
     --color-title: #2E2F42;
     --color-footer-text: #E7E9FC;
     --color-blue: #4D5AE5;
-
+    --color-background-btn: #F4F4FD;
 }
 body 
 {font-family: "Roboto",
-"sans-serif";
-color: var(--color-text)}
+sans-serif;
+color: var(--color-text);
+background: var(--background)}
+.baner {
+    font-weight: 600;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        color: var(--color-light);
+}
+.btn-baner {
+    
+        width: 170px;
+        height: 51px;
+        left: 635px;
+        top: 432px;
+        color: var(--color-light);
+        background: #4D5AE5;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        cursor: pointer;
+}
+
 
 .visually-hidden {
     position: absolute;
@@ -45,6 +67,7 @@ color: var(--color-text)}
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 
 .header {
 background: var(--color-light);
@@ -67,12 +90,10 @@ font-family:"Raleway",sans-serif;
         line-height: 1.33;
         color: var(--color-blue);
 }
-.link {font-family: "inherit";
-}
+.link 
 
 .header-link {
-    font-family: "inherit";
-        font-weight: 600;
+        font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -87,7 +108,7 @@ color:var(--color-title);
 /* style-button */
 .section-list .btn:hover {
     color: var(--color-light);
-    background: #4D5AE5;
+    background: var(--color-blue);
 }
 .section-btn .btn:focus {
 color: var(--color-light);
@@ -98,41 +119,54 @@ background: var(--color-blue);
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color:var(--color-header-btn);
+        color: var(--color-header-btn);
         text-decoration: none;
 }
 .section-btn .btn {
-    font-family: "inherit";
-    font-weight: 600;
+    font-family: inherit;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     color: var(--color-blue);
-    background: #F4F4FD;
+    background: var(--color-background-btn);
     border: 1px solid #E7E9FC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
     cursor: pointer;
 }
 /* style section  */
+.activity {
+    font-weight: 600;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+    color: var(--color-title);}
+    .team {
+        font-weight: 600;
+            font-size: 36px;
+            line-height: 1.11;
+            letter-spacing: 0.02em;
+            color: var(--color-title);
+         }
+    .developers {
+        background: var(--color-background-btn);
+    }
 .section-title {
     font-family: inherit;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 20px;
         line-height: 1.2;
         
         letter-spacing: 0.02em;
         color: var(--color-title);
-        flex: none;
-        order: 0;
-        flex-grow: 0;
+        
 }
 .section-text {
-    font-family: inherit;
-        font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
     
-        color: var(--color-logo-text);
+        color: var(--color-text);
          flex: none;
         order: 1;
         flex-grow: 0;
@@ -147,8 +181,6 @@ background: var(--color-blue);
         font-weight: 800;
         font-size: 18px;
         line-height: 1.33;
-        display: flex;
-        align-items: center;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--color-footer-text);
@@ -156,19 +188,10 @@ background: var(--color-blue);
 }
 
 .logo-footer span {
-    font-family: "Raleway", "sans-serif";
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 1.33;
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
         color: var(--color-blue);
 }
 .footer-text {
     font-family: inherit;
-        font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
